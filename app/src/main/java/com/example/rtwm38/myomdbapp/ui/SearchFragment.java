@@ -78,7 +78,7 @@ public class SearchFragment extends Fragment implements LoaderManager.LoaderCall
         mMovieListRecyclerView.setItemAnimator(null);
 
         mMovieListRecyclerView.setLayoutManager(gridLayoutManager);
-       // mContext.getSupportLoaderManager().enableDebugLogging(true);
+
         mProgressBar = view.findViewById(R.id.progress_spinner);
         return view;
     }

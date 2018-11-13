@@ -56,8 +56,6 @@ public class FavouriteFragment extends Fragment {
         for (int i=0 ; i <arrayList.size() ; i++) {
             Movie movie = (Movie)arrayList.get(i);
             movieArrayList.add(movie);
-            Log.d("jyotitalkies finally", movie.toString());
-
         }
         return movieArrayList;
     }

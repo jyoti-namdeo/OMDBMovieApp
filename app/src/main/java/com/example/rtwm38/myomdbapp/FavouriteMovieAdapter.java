@@ -18,11 +18,11 @@ import java.util.List;
 public class FavouriteMovieAdapter extends RecyclerView.Adapter<FavouriteMovieAdapter.ViewHolder> {
     private List<Movie> mMovies;
     private Fragment mContext;
+    private String TAG = this.getClass().getSimpleName();
 
     public FavouriteMovieAdapter(List<Movie> items, Fragment context) {
         this.mContext = context;
         this.mMovies = items;
-        Log.d("jyotitalkies aaja", items.size()+" ");
     }
     @NonNull
     @Override
@@ -35,11 +35,12 @@ public class FavouriteMovieAdapter extends RecyclerView.Adapter<FavouriteMovieAd
     @Override
     public void onBindViewHolder(@NonNull FavouriteMovieAdapter.ViewHolder viewHolder, int i) {
         Movie movie = mMovies.get(i);
-
         viewHolder.mTitleView.setText(movie.Title);
         viewHolder.mYearView.setText(movie.Year);
-        Log.d("jyotitalkies aaja", movie.toString());
+
+        Log.d(TAG, movie.toString());
         final String imageUrl;
+
         if (! movie.Poster.equals("N/A")) {
             imageUrl = movie.Poster;
         } else {
