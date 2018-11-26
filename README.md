@@ -1,4 +1,4 @@
-# OMDBMovieApp
+# OMDBMovieApp - Andoid application
 A movie app using Open Movie Database APIs.
 
 Functionalites - 
