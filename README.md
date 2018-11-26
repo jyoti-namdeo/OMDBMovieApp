@@ -6,5 +6,5 @@ Functionalites -
 2. Search tab, searches currently running movies.
   - Search tab is having an option to add movie in favourits.
   - On clicking movie, a detail activiy opens with some of its details.
-3. Favourits tab is having a list of favourit movies (There is a database to store movies).
+3. Favourits tab is having a list of favourit movies (There is a database to store movies which I have to develope more).
 
